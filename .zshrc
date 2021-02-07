@@ -14,6 +14,10 @@ fi
 alias ll="ls -lt"
 alias la="ls -alt"
 alias sss="source ~/.zshrc"
+
 # Code - Insiders is VS Code in the Insiders channel, for native M1 processor support.
 # https://twitter.com/code/status/1338886895867224070?s=20
 alias code="code-insiders"
+
+# M1 Mac brew
+export PATH="/opt/homebrew/bin:$PATH"
