@@ -1,0 +1,16 @@
+[user]
+	name = katsuhisa91
+	email = 91katsuhisa@gmail.com
+
+[core]
+	editor = vi
+[color]
+	ui = auto
+[merge]
+	ff = false
+[pull]
+	rebase = true
+[push]
+	default = simple
+[init]
+	defaultBranch = main
