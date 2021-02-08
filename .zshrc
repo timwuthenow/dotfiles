@@ -20,4 +20,4 @@ alias sss="source ~/.zshrc"
 alias code="code-insiders"
 
 # M1 Mac brew
-export PATH="/opt/homebrew/bin:$PATH"
+PATH="/opt/homebrew/bin:$PATH"
