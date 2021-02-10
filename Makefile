@@ -1,6 +1,8 @@
 FILES = .gitconfig .vimrc 
 ZPREZTO_FILES = .zshrc .zpreztorc
+VSCODE_FILES = settings.json
 
+VSCODE_INSIDERS_PATH = $$HOME/Library/Application\ Support/Code\ -\ Insiders/User
 
 PWD := $(shell pwd)
 
@@ -11,9 +13,14 @@ setup:
 		ln -s $(PWD)/$$f $$HOME/$$f; \
 	done
 
-	@echo Making symlinks to zprezto dotfiles...
+	@echo Put zprezto dotfiles...
 	for zpreztof in $(ZPREZTO_FILES); do \
-		cp -rp $(PWD)/$$zpreztof $$HOME/$$zpreztof; \
+		cp -f $(PWD)/prezto/$$zpreztof $$HOME/$$zpreztof; \
+	done
+
+	@echo Put vscode dotfiles...
+	for vscodef in $(VSCODE_FILES); do \
+		cp -f $(PWD)/vscode/$$vscodef $(VSCODE_INSIDERS_PATH)/$$vscodef; \
 	done
 
 .PHONY:	setup
