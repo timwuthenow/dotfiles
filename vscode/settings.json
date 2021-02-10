@@ -1,4 +1,7 @@
 {
     "git.autofetch": true,
-    "workbench.colorTheme": "Zenburn Dark Matter - Midnight - Viserion"
+    "workbench.colorTheme": "Zenburn Dark Matter - Midnight - Viserion",
+    "editor.insertSpaces": true,
+    "editor.tabSize": 4,
+    "breadcrumbs.enabled": true
 }
