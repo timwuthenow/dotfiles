@@ -23,4 +23,5 @@ alias code="code-insiders"
 PATH="/opt/homebrew/bin:$PATH"
 
 # Rust
-PATH="$HOME/.cargo/bin:$PATH"
+CARGO_HOME="$HOME/.cargo"
+PATH="$CARGO_HOME/bin:$PATH"
