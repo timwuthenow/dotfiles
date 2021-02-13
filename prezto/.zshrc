@@ -21,3 +21,6 @@ alias code="code-insiders"
 
 # M1 Mac brew
 PATH="/opt/homebrew/bin:$PATH"
+
+# Rust
+PATH="$HOME/.cargo/bin:$PATH"
