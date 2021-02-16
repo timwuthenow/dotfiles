@@ -24,3 +24,6 @@ After `make setup`, reload .zshrc.
 ```zsh
 source ~/.zshrc
 ```
+
+## Author
+[Katsuhisa Kitano](https://twitter.com/katsuhisa__)
