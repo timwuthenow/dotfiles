@@ -2,7 +2,7 @@ FILES = .gitconfig .vimrc
 ZPREZTO_FILES = .zshrc .zpreztorc
 VSCODE_FILES = settings.json
 
-VSCODE_INSIDERS_PATH = $$HOME/Library/Application\ Support/Code\ -\ Insiders/User
+VSCODE_PATH = $$HOME/Library/ApplicationSupport/Code/User
 
 PWD := $(shell pwd)
 
@@ -20,7 +20,7 @@ setup:
 
 	@echo Put vscode dotfiles...
 	for vscodef in $(VSCODE_FILES); do \
-		cp -f $(PWD)/vscode/$$vscodef $(VSCODE_INSIDERS_PATH)/$$vscodef; \
+		cp -f $(PWD)/vscode/$$vscodef $(VSCODE_PATH)/$$vscodef; \
 	done
 
 .PHONY:	setup
