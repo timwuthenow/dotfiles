@@ -21,3 +21,6 @@ PATH="/opt/homebrew/bin:$PATH"
 # Rust
 CARGO_HOME="$HOME/.cargo"
 PATH="$CARGO_HOME/bin:$PATH"
+
+# Node.js
+NVS_HOME="$HOME/.nvs"
