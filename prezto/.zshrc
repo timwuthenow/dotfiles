@@ -28,3 +28,8 @@ NVS_HOME="$HOME/.nvs"
 if [[ -s "${NVS_HOME}/nvs.sh" ]]; then
   . "${NVS_HOME}/nvs.sh" install
 fi
+
+# Android
+ANDROID_SDK_ROOT="$HOME/Library/Android/sdk"
+PATH="$ANDROID_SDK_ROOT/platform-tools:$PATH"
+PATH="$ANDROID_SDK_ROOT/emulator:$PATH"
