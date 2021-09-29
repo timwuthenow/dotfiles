@@ -24,3 +24,4 @@ PATH="$CARGO_HOME/bin:$PATH"
 
 # Node.js
 NVS_HOME="$HOME/.nvs"
+. "$NVS_HOME/nvs.sh" install
