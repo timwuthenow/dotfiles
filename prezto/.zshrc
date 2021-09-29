@@ -24,4 +24,5 @@ PATH="$CARGO_HOME/bin:$PATH"
 
 # Node.js
 NVS_HOME="$HOME/.nvs"
+# invoke as just `nvs` without any path
 . "$NVS_HOME/nvs.sh" install
