@@ -2,7 +2,7 @@ FILES = .gitconfig .vimrc
 ZPREZTO_FILES = .zshrc .zpreztorc
 VSCODE_FILES = settings.json
 
-VSCODE_PATH = $$HOME/Library/ApplicationSupport/Code/User
+VSCODE_PATH = $$HOME/Library/Application \Support/Code/User
 
 PWD := $(shell pwd)
 
