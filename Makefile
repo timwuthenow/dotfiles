@@ -2,12 +2,14 @@ FILES = .gitconfig .vimrc
 ZPREZTO_FILES = .zshrc .zpreztorc
 VSCODE_FILES = settings.json
 
-VSCODE_PATH = $HOME/Library/Application \Support/Code/User
+VSCODE_PATH = $$HOME/Library/Application\ Support/Code/User
 
 PWD := $(shell pwd)
 
 setup:
 	@echo Making symlinks to dotfiles...
+	@echo The files are $(FILES)
+	@echo The VSCODE_PATH is $(VSCODE_PATH)
 	for f in $(FILES); do \
 		rm -f $$HOME/$$f; \
 		ln -s $(PWD)/$$f $$HOME/$$f; \
